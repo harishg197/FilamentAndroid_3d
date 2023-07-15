@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="412dp"
+        android:layout_height="730dp"
+        android:layout_margin="30dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model Viewer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849"
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-black"
+        android:rotationX="-8"
+        android:rotationY="12"
+        android:text="Welcome Buddy.."
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/surface_view"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/slidebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SlideShow"
+        app:layout_constraintBottom_toBottomOf="@+id/surface_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
